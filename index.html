@@ -18,7 +18,7 @@
 
 <header>      
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="./Images2/logos/logo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="./Images/logos/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,6 +63,7 @@
 
 <!--       ******************       Image Slider        *******************      -->
 <!--Carousel Wrapper-->
+
    <div id="carousel-example-1z" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
     <!--Indicators-->
     <ol class="carousel-indicators">
@@ -75,16 +76,35 @@
     <div class="carousel-inner" role="listbox">
       <!--First slide-->
       <div class="carousel-item active">
+        <div class="slider-text">
+            <h1>First text </h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad architecto, perferendis blanditiis </p>
+            <button class="slider-btn">Read More</button>
+        </div>
+        <div class="overlay"></div>
         <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+        
       </div>
       <!--/First slide-->
       <!--Second slide-->
       <div class="carousel-item">
+        <div class="slider-text">
+            <h1>second text </h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad architecto, perferendis blanditiis </p>
+            <button class="slider-btn">Read More</button>
+        </div>
+        <div class="overlay"></div>
         <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
       </div>
       <!--/Second slide-->
       <!--Third slide-->
       <div class="carousel-item">
+        <div class="slider-text">
+            <h1>Therd Text </h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad architecto, perferendis blanditiis </p>
+            <button class="slider-btn">Read More</button>
+        </div>
+        <div class="overlay"></div>
         <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
       </div>
       <!--/Third slide-->
@@ -101,6 +121,7 @@
     </a>
     <!--/.Controls-->
   </div>
+
 <!--/.Carousel Wrapper-->
 
 <!--        **********************     Courses Search      *****************   -->
@@ -168,7 +189,7 @@
                 <div class="search-from navy-bg">
                     <h3>Courses Search</h3>
                     <form class="ordering">
-                        <div class="orderby-wrapper fff">
+                        <div class="orderby-wrapper mrg-chosen">
                             <label>Select Course</label>
                             <select  name="orderby" class="orderby">
                                 <option value="menu_order">Primary</option>
@@ -180,8 +201,8 @@
                             </select>
                         </div>
 
-                        <div class="orderby-wrapper mrg-chosen fff">
-                            <label>Ceategory*</label>
+                        <div class="orderby-wrapper mrg-chosen ">
+                            <label>Ceategory</label>
                             <select name="orderby" class="orderby">
                                 <option value="menu_order">Grade 1</option>
                                 <option value="popularity" >Grade 2</option>
@@ -199,22 +220,22 @@
                              
                             </select>
                         </div>
-                        <div class="orderby-wrapper fff">
-                            <label>Subject*</label>
+                        <div class="orderby-wrapper mrg-chosen">
+                            <label>Subject</label>
                             <select name="orderby" class="orderby">
                                 <option value="menu_order">Sinhala</option>
                                 <option value="popularity" selected='selected'>Buddisum</option>
                                 <option value="rating">Mathathics</option>
                                 <option value="date">Science</option>
                                 <option value="price">English</option>
-                                <option value="price-desc"></option>
-                                <option value="price-desc"></option>
-                                <option value="price-desc"></option>
-                                <option value="price-desc"></option>
-                                <option value="price-desc"></option>
+                                <option value="price">English</option>
+                                <option value="price">English</option>
+                                <option value="price">English</option>
+                                <option value="price">English</option>
+                                <option value="price">English</option>
+                                <option value="price">English</option>
                             </select>
-                        </div>
-                        <br>
+                        </div><br>
                         <a href="#" class="btn btn-primary btn-block btn-text"> Search</a>
                     </form>
                 </div>
@@ -226,7 +247,8 @@
 <!--        **********************     Courses Search End      *****************   -->
 
 <!-- Popular cours -->
-<div class="container ptb-100">
+
+<div class="container section">
     <div class="section_title text-center">
         <h1>Popular Cources </h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam? Recusandae sit ipsam possimus aliquid molestias tempora. Sint, eveniet blanditiis id, iure delectus veniam officia quibusdam officiis, similique quis cumque.</p>
@@ -522,9 +544,342 @@
 <!--    ***************     Popular Courses         *****************************       -->
 
 
+<!--        *****************       Our Services        ******************************    -->
 
+<div class="services page_section">
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+                <div class="section_title text-center">
+                    <h1>Our Services</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam? Recusandae sit ipsam possimus aliquid molestias tempora. Sint, eveniet blanditiis id, iure delectus veniam officia quibusdam officiis, similique quis cumque.</p>
+                </div>
+			</div>
+		</div>
+
+		<div class="row services_row ">
+            <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+				<div class="icon_container d-flex flex-column justify-content-end">
+					<img src="images/svg/education.svg" alt="">
+				</div>
+					<h3>Online Courses</h3>
+					<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+			</div>
+
+			<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+				<div class="icon_container d-flex flex-column justify-content-end">
+                    <img src="images/svg/education.svg" alt="">
+				</div>
+				<h3 >Indoor Courses</h3>
+				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+            </div>
+                
+            <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+				<div class="icon_container d-flex flex-column justify-content-end">
+                    <img src="images/svg/education.svg" alt="">
+				</div>
+				<h3>Top Programs</h3>
+				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+			</div>
+
+			<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+				<div class="icon_container d-flex flex-column justify-content-end">
+                    <img src="images/svg/education.svg" alt="">
+				</div>
+				<h3>Exceptional Professors</h3>
+				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+			</div>
+
+			<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+				<div class="icon_container d-flex flex-column justify-content-end">
+                    <img src="images/svg/education.svg" alt="">
+				</div>
+				<h3>Top Programs</h3>
+				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+			</div>
+
+			<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+				<div class="icon_container d-flex flex-column justify-content-end">
+                    <img src="images/svg/education.svg" alt="">
+				</div>
+				<h3>Graduate Diploma</h3>
+				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+			</div>
+
+		</div>
+	</div>
+</div>
+  
+<!--        *****************       Our Services End      ******************************    -->
+
+        
+
+<!--    ***********************     Thestimonial        **************************  -->
+
+<section class="testimonial-section2">
+    <div class="section_title text-center">
+        <h1>Testimonials</h1>
+        <p>Ipsam, quibusdam? Recusandae sit ipsam possimus aliquid molestias tempora. Sint, eveniet blanditiis id, iure delectus veniam officia quibusdam officiis, similique quis cumque.</p>
+    </div>
+  
+    <div id="testim" class="testim">
+        <div class="wrap">
+            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+            <ul id="testim-dots" class="dots">
+                <li class="dot active"></li><!--
+                --><li class="dot"></li><!--
+                --><li class="dot"></li><!--
+                --><li class="dot"></li><!--
+                --><li class="dot"></li>
+            </ul>
+                   
+            <div id="testim-content" class="cont">     
+
+                <div class="active">
+                    <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
+                    <div class="h4">Kellie</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                </div>
+   
+                <div>
+                    <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
+                    <div class="h4">Jessica</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                </div>
+   
+                <div>
+                    <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt=""></div>
+                    <div class="h4">Kellie</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                </div>
+   
+                <div>
+                    <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
+                    <div class="h4">Jessica</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                </div>
+   
+                <div>
+                    <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt=""></div>
+                    <div class="h4">Kellie</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                </div>
+   
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--    ***********************     Thestimonial End        **************************  -->
+
+
+
+<footer id="dk-footer" class="dk-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <div class="dk-footer-box-info">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logos/logo.png" alt="footer_logo" class="img-fluid">
+                    </a>
+                    <p class="footer-info-text">
+                       Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                    </p>
+                    <div class="footer-social-link">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+                <div class="footer-awarad">
+                    <img src="images/icon/best.png" alt="">
+                    <p>Best Online School 2019</p>
+                </div>
+            </div>
+            <!-- End Col -->
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3>Jaipur India</h3>
+                                <p>5353 Road Avenue</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="contact-us contact-us-last">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3>95 711 9 5353</h3>
+                                <p>Give us a call</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Contact Row -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <div class="section-heading">
+                                <h3>Useful Links</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Team</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#">Faq</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Widget -->
+                    </div>
+                    <!-- End col -->
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget">
+                            <div class="section-heading">
+                                <h3>Subscribe</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                            Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                            <form action="#">
+                                <div class="form-row">
+                                    <div class="col dk-footer-form">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                        <button type="submit">
+                                            <i class="fa fa-send"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End form -->
+                        </div>
+                        <!-- End footer widget -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Widget Row -->
+    </div>
+    <!-- End Contact Container -->
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>Copyright © 2019, All Right Reserved Seobin</span>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6">
+                    <div class="copyright-menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+    </div>
+    <!-- End Copyright -->
+    <!-- Back to top -->
+
+    <!----
+    <div id="back-to-top" class="back-to-top">
+        <button class="btn btn-dark" title="Back to Top" style="display: block;">
+            <i class="fa fa-angle-up"></i>
+        </button>
+    </div>
+
+-->
+    <!-- End Back to top -->
+</footer>
+
+
+<script src="./js/app.js"></script>
 <!-- Bootstrap js -->
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
