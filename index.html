@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page ||  Aමොළේ</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+      <!--Font awesome CDN-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navigathion bar -->
+
+<header>      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="./Images2/logos/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="font-size: 15px;color: azure;">home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#" style="font-size: 15px;color: azure;">about us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#" style="font-size: 15px;color: azure;">contact us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="signin.html" style="font-size: 15px;color: azure;" id="navSignIn">sign in<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="signup.html" style="font-size: 15px;color: azure;" id="navSignUp">sign up<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item" id="profile" >
+                    <div class="dropdown"> 
+                        <a href="./dashbord.html">
+                            <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+                        </a>
+                        <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    </button>
+                        
+                        <div class="dropdown-menu dropdown-menu-right drop" style="margin: 10px 0;" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button"><a href="./dashbord.html" class="icon-link" style="font-size: 14px;"><i class="fas fa-tachometer-alt"></i>Dashbord</a></button>
+                            <button class="dropdown-item" type="button"><a href="" class="icon-link" style="font-size: 14px;" onclick="logout()"><i class="fas fa-sign-out-alt"></i>Log out</a></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <!-- Navigathion bar End -->
+
+<!--       ******************       Image Slider        *******************      -->
+<!--Carousel Wrapper-->
+   <div id="carousel-example-1z" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <!--First slide-->
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+      </div>
+      <!--/First slide-->
+      <!--Second slide-->
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+      </div>
+      <!--/Second slide-->
+      <!--Third slide-->
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+      </div>
+      <!--/Third slide-->
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+<!--/.Carousel Wrapper-->
+
+<!--        **********************     Courses Search      *****************   -->
+    
+<section class="search-area ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 search-contant">
+                <div class="search-all">
+                    <h2>We Have 65 Years <br>Experience In This Passion</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="service-left">
+                                <div class="offer-icon">
+                                    <i class="fas fa-people-carry"></i>
+                                </div>
+                                <div class="offer-text">
+                                    <h3>Quick Help</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="service-left mrg-xs">
+                                <div class="offer-icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                </div>
+                                <div class="offer-text">
+                                    <h3>In Your Country</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="service-left service-mrg mrg-xs">
+                                <div class="offer-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="offer-text">
+                                    <h3>Scholarship For Students</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="service-left service-mrg mrg-xs">
+                                <div class="offer-icon">
+                                    <i class="fas fa-football-ball"></i>
+                                </div>
+                                <div class="offer-text">
+                                    <h3>Sports & Events</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 form-section">
+                <div class="search-from navy-bg">
+                    <h3>Courses Search</h3>
+                    <form class="ordering">
+                        <div class="orderby-wrapper fff">
+                            <label>Select Course</label>
+                            <select  name="orderby" class="orderby">
+                                <option value="menu_order">Primary</option>
+                                <option  value="popularity" selected='selected'>Ordinary Level</option>
+                                <option value="rating">Advansed Level</option>
+                                <option value="date">University</option>
+                                <option value="price">Spoken English</option>
+                                <option value="price-desc">IT Course</option>
+                            </select>
+                        </div>
+
+                        <div class="orderby-wrapper mrg-chosen fff">
+                            <label>Ceategory*</label>
+                            <select name="orderby" class="orderby">
+                                <option value="menu_order">Grade 1</option>
+                                <option value="popularity" >Grade 2</option>
+                                <option value="rating">Grade 3</option>
+                                <option value="date">Grade 4</option>
+                                <option value="price">Grade 5</option>
+                                <option value="price-desc">Grade 6</option>
+                                <option value="price-desc">Grade 7</option>
+                                <option value="price-desc">Grade 8</option>
+                                <option value="price-desc">Grade 9</option>
+                                <option value="price-desc">Grade 10</option>
+                                <option value="price-desc">Grade 11</option>
+                                <option value="price-desc">Grade 12</option>
+                                <option value="price-desc">Grade 13</option>
+                             
+                            </select>
+                        </div>
+                        <div class="orderby-wrapper fff">
+                            <label>Subject*</label>
+                            <select name="orderby" class="orderby">
+                                <option value="menu_order">Sinhala</option>
+                                <option value="popularity" selected='selected'>Buddisum</option>
+                                <option value="rating">Mathathics</option>
+                                <option value="date">Science</option>
+                                <option value="price">English</option>
+                                <option value="price-desc"></option>
+                                <option value="price-desc"></option>
+                                <option value="price-desc"></option>
+                                <option value="price-desc"></option>
+                                <option value="price-desc"></option>
+                            </select>
+                        </div>
+                        <div class="chosen-submit text-center">
+                            <a class="button extra-small" href="#">
+                                <span>search</span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--        **********************     Courses Search End      *****************   -->
+
+<!-- Popular cours -->
+<div class="container ptb-100">
+    <div class="section_title text-center">
+        <h1>Popular Cources </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam? Recusandae sit ipsam possimus aliquid molestias tempora. Sint, eveniet blanditiis id, iure delectus veniam officia quibusdam officiis, similique quis cumque.</p>
+    </div>
+
+    <br><br>
+        
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="course-1-item">
+                <figure class="thumnail">
+                    <a href="course-single.html"><img src="images/cources/angular.png" alt="Image" class="img-fluid"></a>
+                    <div class="price">$99.00</div>
+                        <div class="category"> 
+                        <h3>සිංහල</h3>
+                    </div>
+                </figure>
+                    
+                <div class="course-1-content">
+                    <h2>How To Create Mobile Apps Using Ionic</h2>
+                    <div class="rating text-center ">
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="blog-meta">
+                            <span class="published4">
+                                <a href="#"><i class="fas fa-user-graduate"></i> 20</a> <!-- comments -->
+                            </span>
+                            <span class="published4">
+                                <a href="#"><i class="icofont icofont-comment"></i> 20</a> <!-- comments -->
+                            </span>
+                        </div>  
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm btn-block">Enroll Now</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="course-1-item">
+                <figure class="thumnail">
+                    <a href="course-single.html"><img src="images/cources/ionic.png" alt="Image" class="img-fluid"></a>
+                    <div class="price">Free</div>
+                        <div class="category"> 
+                        <h3>ගණිතය</h3>
+                    </div>  
+                </figure>
+                    
+                <div class="course-1-content">
+                    <h2>How To Create Mobile Apps Using Ionic</h2>
+                    <div class="rating text-center">
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="blog-meta">
+                            <span class="published4">
+                                <a href="#"><i class="fas fa-user-graduate"></i> 20</a> <!-- comments -->
+                            </span>
+                            <span class="published4">
+                                <a href="#"><i class="icofont icofont-comment"></i> 20</a> <!-- comments -->
+                            </span>
+                        </div>  
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm btn-block">Enroll Now</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="course-1-item">
+                <figure class="thumnail">
+                    <a href="course-single.html"><img src="images/cources/bootstrap.png" alt="Image" class="img-fluid"></a>
+                    <div class="price">$99.00</div>
+                        <div class="category"> 
+                        <h3>විද්‍යාව</h3>
+                        </div>  
+                </figure>
+                <div class="course-1-content ">
+                    <h2>How To Create Mobile Apps Using Ionic</h2>
+                    <div class="rating text-center">
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="blog-meta">
+                            <span class="published4">
+                                <a href="#"><i class="fas fa-user-graduate"></i> 20</a> <!-- comments -->
+                            </span>
+                            <span class="published4">
+                                <a href="#"><i class="icofont icofont-comment"></i> 20</a> <!-- comments -->
+                            </span>
+                        </div>  
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm btn-block">Enroll Now</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="course-1-item">
+                <figure class="thumnail">
+                    <a href="course-single.html"><img src="images/cources/php.png" alt="Image" class="img-fluid"></a>
+                    <div class="price">$99.00</div>
+                        <div class="category"> 
+                        <h3>ICT</h3>
+                        </div>  
+                </figure>
+                <div class="course-1-content ">
+                    <h2>How To Create Mobile Apps Using Ionic</h2>
+                    <div class="rating text-center">
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="blog-meta">
+                            <span class="published4">
+                                <a href="#"><i class="fas fa-user-graduate"></i> 20</a> <!-- comments -->
+                            </span>
+                            <span class="published4">
+                                <a href="#"><i class="icofont icofont-comment"></i> 20</a> <!-- comments -->
+                            </span>
+                        </div>  
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm btn-block">Enroll Now</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="course-1-item">
+                <figure class="thumnail">
+                    <a href="course-single.html"><img src="images/cources/angular.png" alt="Image" class="img-fluid"></a>
+                    <div class="price">$99.00</div>
+                        <div class="category"> 
+                        <h3>සිංහල</h3>
+                    </div>  
+                </figure>
+                <div class="course-1-content">
+                    <h2>How To Create Mobile Apps Using Ionic</h2>
+                    <div class="rating text-center">
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="blog-meta">
+                            <span class="published4">
+                                <a href="#"><i class="fas fa-user-graduate"></i> 20</a> <!-- comments -->
+                            </span>
+                            <span class="published4">
+                                <a href="#"><i class="icofont icofont-comment"></i> 20</a> <!-- comments -->
+                            </span>
+                        </div>  
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm btn-block">Enroll Now</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="course-1-item">
+                <figure class="thumnail">
+                    <a href="course-single.html"><img src="images/cources/ionic.png" alt="Image" class="img-fluid"></a>
+                    <div class="price">Free</div>
+                        <div class="category"> 
+                        <h3>ගණිතය</h3>
+                    </div>  
+                </figure>
+                <div class="course-1-content">
+                    <h2>How To Create Mobile Apps Using Ionic</h2>
+                    <div class="rating text-center">
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="blog-meta">
+                            <span class="published4">
+                                <a href="#"><i class="fas fa-user-graduate"></i> 20</a> <!-- comments -->
+                            </span>
+                            <span class="published4">
+                                <a href="#"><i class="icofont icofont-comment"></i> 20</a> <!-- comments -->
+                            </span>
+                        </div>  
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm btn-block">Enroll Now</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="course-1-item">
+                <figure class="thumnail">
+                    <a href="course-single.html"><img src="images/cources/bootstrap.png" alt="Image" class="img-fluid"></a>
+                    <div class="price">$99.00</div>
+                        <div class="category"> 
+                        <h3>විද්‍යාව</h3>
+                    </div>  
+                </figure>
+                <div class="course-1-content ">
+                    <h2>How To Create Mobile Apps Using Ionic</h2>
+                    <div class="rating text-center ">
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="blog-meta">
+                            <span class="published4">
+                                <a href="#"><i class="fas fa-user-graduate"></i> 20</a> <!-- comments -->
+                            </span>
+                            <span class="published4">
+                                <a href="#"><i class="icofont icofont-comment"></i> 20</a> <!-- comments -->
+                            </span>
+                        </div>  
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm btn-block">Enroll Now</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="course-1-item">
+                <figure class="thumnail">
+                    <a href="course-single.html"><img src="images/cources/php.png" alt="Image" class="img-fluid"></a>
+                    <div class="price">$99.00</div>
+                        <div class="category"> 
+                        <h3>ICT</h3>
+                    </div>  
+                </figure>
+                <div class="course-1-content ">
+                    <h2>How To Create Mobile Apps Using Ionic</h2>
+                    <div class="rating text-center ">
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                        <span class="icon-star2 text-warning"><i class="fas fa-star"></i></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="blog-meta">
+                            <span class="published4">
+                                <a href="#"><i class="fas fa-user-graduate"></i> 20</a> <!-- comments -->
+                            </span>
+                            <span class="published4">
+                                <a href="#"><i class="icofont icofont-comment"></i> 20</a> <!-- comments -->
+                            </span>
+                        </div>  
+                    </div>
+                        <button type="button" class="btn btn-primary btn-sm btn-block">Enroll Now</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--    ***************     Popular Courses         *****************************       -->
+
+
+
+<!-- Bootstrap js -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
