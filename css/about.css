@@ -285,6 +285,13 @@ section .section-title {
 }
 
 
+@media screen and (max-width:375px){
+   .our-info{
+    margin: 0;
+    padding: 0;
+   }
+   
+}
 
 
 
