@@ -29,6 +29,9 @@ section{
     color: #fff;
 
 }
+.img-view{
+    padding: 0px !important;
+}
 .coures-section{
     margin: 80px auto;
     padding: 0px 0px;
@@ -230,9 +233,3 @@ padding: 20px 0px;
    
 }
 
-@media screen and (max-width:375px){
-   .img-view img{
-       width: auto;
-       height: auto !important;
-   }
-}
