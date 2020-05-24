@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding:50px 20px;
+}
+.main-img{
+    background: linear-gradient(rgba(5, 5, 5, 0.322), rgba(20, 20, 20, 0.671)), url("../images/images/18.jpg")no-repeat;
+    background-position: 50% 30%;
+    background-size: cover;
+    width: auto;
+    height: 50vh;
+}
+.main-about{
+    position: relative;
+    top: 60px;
+    width: auto;
+    margin: 0;
+    padding:20px;
+    z-index: 2;
+}
+.main-about h1{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    color: #fff;
+
+}
+.coures-section{
+    margin: 80px auto;
+    padding: 0px 0px;
+}
+
+.coures-title{
+    background: #F2F4F4;
+    text-align: center;
+    padding: 15px 10px;
+}
+.coures-title h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.nav-tabs{
+    width: 100%;
+    background: #F2F4F4;   
+}
+.nav-link{
+    color: #3498DB;
+}
+.nav-link:hover{
+    color: rgb(0, 114, 190);
+    background: #D6DBDF;
+    border: none;
+    margin: 0;
+}
+.tab-content{
+    padding: 10px 15px;
+    text-align: center;
+}
+.content{
+background: #F8F9F9;
+padding: 20px 0px;
+}
+.content h2{
+    text-align: center;
+}
+.card-link i{
+    margin: 0px 10px;
+    color: #212F3D;
+}
+.card-link {
+    color: #212F3D;
+    font-size: 19px;
+    font-weight: 600;
+}
+.card-link span{
+    float: right;
+}
+
+.video-details{
+    background: #F8F9F9;
+    list-style: none;
+    margin: 0em;
+}
+.video-details .video{
+    display: flex;
+    background: #EAEDED;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+    padding: 5px 10px;
+    height: auto;
+}
+.video i{
+    color: #2E86C1;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-right: 20px;
+}
+.video p{
+    margin: 0px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2E86C1;
+
+}
+.video span{
+    position: absolute;
+    float: right;
+    right: 15px;
+    font-weight: 600;
+    color: #3498DB;
+}
+
+
+
+
+
+.sidebar-details{
+    background: rgb(255, 255, 255);
+}
+
+.details{
+    width: 100%;
+    border: none !important;
+    background: none !important;
+    margin: 0px 10px;
+}
+.details .details-header{
+    display: flex;
+    margin: 10px 0px 0px;
+    border:none;
+    border-radius: 10px;
+}
+.details-header p{
+    margin: 0;
+    float: left;
+    color: #707B7C;
+    font-weight: 600;
+}
+.details-header span{
+    float: right;
+    color: #2E86C1;
+    font-weight: 600;
+    margin-left: 10px !important;
+}
+.reviews{
+    color: #707B7C;
+    display: flex;
+    font-weight: 500;
+}
+.star i{
+    color: #F39C12;
+    font-size: 16px;
+}
+.feedback-submit{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.thumb{
+    margin-right: 10px;
+    position: relative;
+    top: 6px;
+}
+.thumb img{
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .main-about{
+        position: relative;
+        top: 0;
+        padding:0px;
+    }
+    .main-about h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:1440px){
+    .main-about{
+        position: relative;
+        top: 0;
+        padding:0px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .reviews{
+        display: block !important;
+        text-align: center !important;
+    } 
+    .details-header{
+        padding: 10px 0px;
+        font-size: 12px;
+        display: block !important;
+    }
+    .details-header p{
+        font-size: 12px;
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:425px){
+    .main-about{
+        position: relative;
+        top: 30px;
+        padding:0px;
+    }
+    .main-about h1{
+        font-size: 40px;
+    }
+    .course-details{
+        margin: 20px 10px;
+    }
+    .reviews{
+        display: flex !important;
+    }
+   
+}
