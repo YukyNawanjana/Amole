@@ -32,3 +32,21 @@
 /* Nav Bar  End */
 
 /*  ****************************************************************************************************************************************    */
+
+@media screen and (max-width:768px){
+     /* Nav Bar */
+     .nav-item{
+        margin: auto;
+    }
+    .dropdown .drop{
+        position: relative;
+        top: auto;
+        background: transparent;
+        border: none;
+        color: #fff;
+        text-align: center;
+    }
+    .dropdown a{
+      color: #fff;
+    }
+}

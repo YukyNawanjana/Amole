@@ -890,21 +890,7 @@ carousel-item img{
 /* 768 Tab */
 
 @media screen and (max-width:768px){
-    /* Nav Bar */
-    .nav-item{
-        margin: auto;
-    }
-    .dropdown .drop{
-        position: relative;
-        top: auto;
-        background: transparent;
-        border: none;
-        color: #fff;
-        text-align: center;
-    }
-    .dropdown a{
-      color: #fff;
-    }
+    
     .orderby{
         width: 170px;
         height:40px;
@@ -913,7 +899,6 @@ carousel-item img{
         font: 15px;
         font-weight: 600;
     }
-
     /* image slider */
         
     .slider-text{
