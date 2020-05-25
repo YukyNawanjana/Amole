@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.video-section{
+    margin-bottom: 80px;
+}
+.video-section .list-lessons{
+    background: #EAEDED;
+    padding: 0px;
+    height: auto;
+}
+.list-lessons h3{
+    background: #EAEDED;
+    text-align: center;
+    margin: 0px;
+    padding: 9px;
+}
+
+.card-link i{
+    margin: 0px 10px;
+    color: #212F3D;
+}
+.card-link {
+    color: #212F3D;
+    font-size: 19px;
+    font-weight: 600;
+}
+.card-link span{
+    float: right;
+}
+
+.video-details{
+    background: #F8F9F9;
+    list-style: none;
+    margin: 0em;
+}
+.video-details .video{
+    display: flex;
+    background: #EAEDED;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+    padding: 5px 10px;
+    height: auto;
+}
+.video i{
+    color: #2E86C1;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    margin-right: 20px;
+}
+.video p{
+    margin: 0px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2E86C1;
+
+}
+.video span{
+    position: absolute;
+    float: right;
+    right: 15px;
+    font-weight: 600;
+    color: #3498DB;
+}
+.ScrollStyle
+{
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+
+.video-previwe{
+    background: #EAEDED;
+}
+.video-previwe .video-nav{
+    background: #2E86C1;
+    display: flex;
+    color: #fff;
+    margin: 0px;
+    padding: 0px
+}
+.video-nav .siwich-button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    color: #fff;
+    font-size: 30px;
+    background: #21618C;
+    cursor: pointer;
+}
+.siwich-button i{
+    position: relative;
+    top: 2px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.video-nav .home a{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    top: 12px;
+    margin: 0px 34px;
+}
+.video-nav .home a:hover{
+    color: rgb(6, 57, 92);
+    text-decoration: none;
+}
+.home .fa-home{
+    margin-right: 10px;
+}
+.video-nav .video-title{
+    display: flex;
+    margin: 0px 50px;
+}
+.video-title i{
+    margin-right: 10px;
+    position: relative;
+    padding: 0px;
+    margin: 0px 10px;
+    height: 0px;
+    font-size: 18px;
+    top: 17px;
+}
+.video-title h3{
+    position: relative;
+    top: 7px;
+}
+
+
+@media screen and (max-width:425px){
+   .siwich-button{
+       visibility: hidden;
+   }
+   .home{
+       visibility: hidden;
+   }
+   .video-title{
+       position: absolute;
+   }
+}

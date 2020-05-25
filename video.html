@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+      <!-- Style Sheet -->
+      <link rel="stylesheet" href="./css/navbar.css">
+      <link rel="stylesheet" href="./css/video.css">
+      <link rel="stylesheet" href="./css/footer.css">
+      <!--Font awesome CDN-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  
+      <!-- Bootstrap css -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Navigathion bar -->
+
+<header>      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="./images/logos/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" style="font-size: 15px;color: azure;">home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="about-us.html" style="font-size: 15px;color: azure;">about us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./courses.html" style="font-size: 15px;color: azure;">Courses<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./contact-us.html" style="font-size: 15px;color: azure;">contact us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="signin.html" style="font-size: 15px;color: azure;" id="navSignIn">sign in<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="signup.html" style="font-size: 15px;color: azure;" id="navSignUp">sign up<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item" id="profile" >
+                    <div class="dropdown"> 
+                        <a href="./dashbord.html">
+                            <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+                        </a>
+                        <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    </button>
+                        
+                        <div class="dropdown-menu dropdown-menu-right drop" style="margin: 10px 0;" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button"><a href="./dashbord.html" class="icon-link" style="font-size: 14px;"><i class="fas fa-tachometer-alt"></i>Dashbord</a></button>
+                            <button class="dropdown-item" type="button"><a href="" class="icon-link" style="font-size: 14px;" onclick="logout()"><i class="fas fa-sign-out-alt"></i>Log out</a></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid video-section">
+    <div class="row">
+        <div class="col-md-3 col-sm-12 list-lessons">
+            <h3><i class="fas fa-book-open"></i> Lesson List</h3> 
+            <div class="ScrollStyle">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <i class="fas fa-plus"></i>
+                            Introduction & Setup 
+                            <span>08:00:44</span>
+                        </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body" style="padding: 5px;">
+                            <ul class="video-details">
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 1</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 2</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 3</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 4</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 5</p><span>10:44</span></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            <i class="fas fa-plus"></i>
+                            Introduction to HTML
+                            <span>03:00:44</span>
+                        </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="video-details">
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 1</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 2</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 3</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 4</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 5</p><span>10:44</span></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            <i class="fas fa-plus"></i>
+                            Introduction to Front End Development 
+                            <span>01:00:44</span>
+                        </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="video-details">
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 1</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 2</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 3</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 4</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 5</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 6</p><span>10:44</span></li>
+                                <li class="video"><i class="fas fa-play"></i><p>Leson 7</p><span>10:44</span></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-12 video-previwe">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 video-nav">
+                    <div class="siwich-button">
+                        <i class="fas fa-angle-left siwich-button-left"></i>
+                    </div>
+                    <div class="home">
+                        <a href=""><i class="fas fa-home"></i> Go to Course Home</a>
+                    </div>
+                    <div class="video-title">
+                        <i class="fas fa-video"></i>
+                        <h3>Lesson 1</h3>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <video width="100%" height="auto" controls>
+                        <source src="/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.mp4" type="video/mp4">
+                        <source src="/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.ogg" type="video/ogg">
+                      Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <br><br>
+
+             <!-- pagination -->
+             <div class="row">
+                <div class="col-md-12 col-sm-12">
+                     <nav aria-label="Page navigation example ">
+                         <ul class="pagination justify-content-center">
+                             <li class="page-item disabled">
+                                 <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous Video</a>
+                             </li>
+                             <li class="page-item">
+                                 <a class="page-link" href="#">Next Video</a>
+                             </li>
+                         </ul>
+                     </nav>
+                </div>
+             </div>
+ 
+             <!-- pagination End -->
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer id="dk-footer" class="dk-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <div class="dk-footer-box-info">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logos/logo.png" alt="footer_logo" class="img-fluid">
+                    </a>
+                    <p class="footer-info-text">
+                       Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                    </p>
+                    <div class="footer-social-link">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+                <div class="footer-awarad">
+                    <img src="images/icon/best.png" alt="">
+                    <p>Best Online School 2019</p>
+                </div>
+            </div>
+            <!-- End Col -->
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3>Sri Lanka</h3>
+                                <p>5353 Road Colombo</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="contact-us contact-us-last">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3>0702002030</h3>
+                                <p>Give us a call</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Contact Row -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <div class="section-heading">
+                                <h3>Useful Links</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Team</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#">Faq</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Widget -->
+                    </div>
+                    <!-- End col -->
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget">
+                            <div class="section-heading">
+                                <h3>Subscribe</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                            Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                            <form action="#">
+                                <div class="form-row">
+                                    <div class="col dk-footer-form">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                        <button type="submit">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End form -->
+                        </div>
+                        <!-- End footer widget -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Widget Row -->
+    </div>
+    <!-- End Contact Container -->
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>Copyright © 2020</span>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6">
+                    <div class="copyright-menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+    </div>
+    <!-- End Copyright -->
+    <!-- Back to top -->
+
+    <!----
+    <div id="back-to-top" class="back-to-top">
+        <button class="btn btn-dark" title="Back to Top" style="display: block;">
+            <i class="fa fa-angle-up"></i>
+        </button>
+    </div>
+
+-->
+    <!-- End Back to top -->
+</footer>
+<!-- Footer-->
+
+<script src="./js/video.js"></script>
+    <!-- Bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
