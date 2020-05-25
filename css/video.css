@@ -68,7 +68,7 @@
 }
 .ScrollStyle
 {
-    max-height: 50vh;
+    max-height: 100vh;
     overflow-y: scroll;
 }
 
@@ -144,4 +144,10 @@
    .video-title{
        position: absolute;
    }
+    .ScrollStyle
+    {
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+
 }
